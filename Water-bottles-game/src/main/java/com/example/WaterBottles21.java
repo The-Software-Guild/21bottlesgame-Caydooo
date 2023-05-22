@@ -65,7 +65,10 @@ public class WaterBottles21 {
 	 
 	public int pickAfterUser(int pick1) {
 		//YOUR CODE STARTS HERE
-		return (5-pick1);
+		//The secret to the computer algorithm is that it's answer + the user's answer is equal to 5//
+		//This way, there are only 9 moves. So whoever's turn it is first, they will lose the game due to the amount of turns when using this algorithm.//
+		int computerResponse = 5;
+		return (computerResponse-pick1);
 		//YOUR CODE ENDS HERE
 	}
 	 
