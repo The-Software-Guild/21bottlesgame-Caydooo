@@ -36,24 +36,31 @@ public class WaterBottles21 {
 	 
 	 public int isInputNumberValid()  {
 		 
-			//1. Write the Java Code to accept the valid number of bottles user wants to pick.
-			//2. Use the Instance variable "scanner" to accept the input from the user.
-			//3. In case of valid input, return back the number.
-			//4. To print on console, use this.printStream.print() and NOT the System.out.println()
-			//5. In case of invalid input, print on console exactly as below :- 
-			//   "As per the Game Rules, please pick up bottles between 1 and 4 only, both inclusive".
-			//   and return back -1
+		 //1. Write the Java Code to accept the valid number of bottles user wants to pick.
+		 //2. Use the Instance variable "scanner" to accept the input from the user.
+		 //3. In case of valid input, return back the number.
+		 //4. To print on console, use this.printStream.print() and NOT the System.out.println()
+		 //5. In case of invalid input, print on console exactly as below :- 
+		 //   "As per the Game Rules, please pick up bottles between 1 and 4 only, both inclusive".
+		 //   and return back -1
 			 
-			//YOUR CODE STARTS HERE
-                        return -1;
-	                //YOUR CODE ENDS HERE	
+		 //YOUR CODE STARTS HERE
+		 int bottleAmount = scanner.nextInt();
+			
+		 if(bottleAmount < 1 || bottleAmount > 4) {
+			 this.printStream.print("As per the Game Rules, please pick up bottles between 1 and 4 only, both inclusive");
+			 return -1;
+		 }
+		 
+		 return bottleAmount;
+		 //YOUR CODE ENDS HERE	
 	 }
  
 	 
 	public int pickAfterUser(int pick1) {
-			//YOUR CODE STARTS HERE
-                        return -1;
-	                //YOUR CODE ENDS HERE
+		//YOUR CODE STARTS HERE
+		return (5-pick1);
+		//YOUR CODE ENDS HERE
 	}
 	 
 	 
