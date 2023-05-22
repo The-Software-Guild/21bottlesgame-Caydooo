@@ -45,14 +45,20 @@ public class WaterBottles21 {
 		 //   and return back -1
 			 
 		 //YOUR CODE STARTS HERE
-		 int bottleAmount = scanner.nextInt();
-			
-		 if(bottleAmount < 1 || bottleAmount > 4) {
-			 this.printStream.print("As per the Game Rules, please pick up bottles between 1 and 4 only, both inclusive");
-			 return -1;
-		 }
+		 String bottleAmount = scanner.nextLine();
+		
+		 int length = bottleAmount.length();
 		 
-		 return bottleAmount;
+		 for(int i = 0; i < length; i++) {
+			 if(bottleAmount.charAt(i) < '1' || bottleAmount.charAt(i) > '4') {
+				 this.printStream.print("As per the Game Rules, please pick up bottles between 1 and 4 only, both inclusive");
+				 return -1;
+			 }		 
+		 }
+
+		 int amount = Integer.parseInt(bottleAmount);
+		 
+		 return amount;
 		 //YOUR CODE ENDS HERE	
 	 }
  
